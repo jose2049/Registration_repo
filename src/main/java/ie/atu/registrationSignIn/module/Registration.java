@@ -10,6 +10,7 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
+//This class is used to store data in the database thanks to @Entity
 @Getter
 @Setter
 @NoArgsConstructor
@@ -18,7 +19,6 @@ import lombok.*;
 public class Registration {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Email(message = "Please enter a valid email address")
     private String email;
 
